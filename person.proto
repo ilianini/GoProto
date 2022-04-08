@@ -1,0 +1,15 @@
+syntax="proto3";
+
+package main;
+option go_package = "./;main";
+message SeguidoresSociales {
+  int32 youtube = 1;
+  int32 twitter = 2;
+}
+
+message Persona {
+      string nombre = 1;
+      int32 edad = 2;
+      int32 peso =3;
+    SeguidoresSociales seguidoressociales = 4;
+}
